@@ -1,0 +1,19 @@
+{
+  "name": "Dan's Extension",
+  "manifest_version": 2,
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "Click me!!!!!!!"
+  }
+}
